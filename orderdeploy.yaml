@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: order
-        image: claratang98/orderconsumer:task2
+        image: claratang98/order:task2
         resources:
           limits:
             memory: "1024Mi"
@@ -28,8 +28,7 @@ spec:
           - name: Password
             value: guest
           - name: Database
-          - name: OrdersDb
-            value: rabbitmq           
+            value: OrdersDb        
              
 ---
 apiVersion: v1
